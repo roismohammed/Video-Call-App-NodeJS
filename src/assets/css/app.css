@@ -1,17 +1,23 @@
+form textarea{
+    height: 50px !important;
+    margin-top: 30px;
+    border-radius:20px 0px 0px 20px !important;
+}
 
+form button{
+    height: 50px !important;
+    margin-top: 30px;
+    border-radius:0px 20px 20px 0px !important;
+}
 
 .chat-col {
     top: 40.5px;
     z-index: 1000;
     position: fixed;
     color: #fff;
-    padding-right: 20px;
-    padding-left: 20px;
-    padding-bottom: 40px;
-    padding-top: 15px;
-    height: 100vh;
-    background-color: red;
-    width: 700px; /* Lebar awal */
+    padding: 20px  20px 20px 20px !important;
+    height: 100vh !important;
+    width: 700px !important; /* Lebar awal */
 }
 
 .chat-col.chat-opened {
@@ -24,6 +30,7 @@
 }
 
 #chat-messages{
+    width: 500px !important;
     height: 60vh;
     margin-bottom: 20px;
     overflow-x: hidden;
@@ -196,11 +203,11 @@
 @media only screen and (max-width:767px){
     .chat-col{
         overflow: none;
-        height: 500px;
-        width: 400px;
+        height: 500px !important;
+        width: 400px !important; 
         z-index: 99999;
         transition: 0.3s;
-        margin-top: 100px;
+        margin-top: 130px !important;
     }
   
     .chat-opened::-webkit-scrollbar {
